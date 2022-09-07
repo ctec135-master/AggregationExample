@@ -12,10 +12,10 @@ namespace Aggregation
 
         public void AddScheduleItem(ScheduleItem item)
         {
-            for(int i=0; i < schedule.Length; i++)
+            for (int i = 0; i < schedule.Length; i++)
             {
                 // put item in next open spot in array then quit
-                if(schedule[i] == null)
+                if (schedule[i] == null)
                 {
                     schedule[i] = item;
                     break;
@@ -25,9 +25,9 @@ namespace Aggregation
 
         public void PrintSchedule()
         {
-            foreach(ScheduleItem item in schedule)
+            foreach (ScheduleItem item in schedule)
             {
-                if(item != null)
+                if (item != null)
                 {
                     Console.WriteLine("{0} {1}\t{2}", item.Department, item.CourseNumber, item.CourseName);
                 }
